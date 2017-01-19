@@ -46,6 +46,28 @@ const Root = () => (
           )}
         />
 
+        <Match
+          exactly
+          pattern="/block"
+          render={props => (
+            <LazyRoute
+              {...props}
+              component={System.import('../pages/Block')}
+            />
+          )}
+        />
+
+        <Match
+          exactly
+          pattern="/blockchain"
+          render={props => (
+            <LazyRoute
+              {...props}
+              component={System.import('../pages/Blockchain')}
+            />
+          )}
+        />
+
         <Miss
           render={props => (
             <LazyRoute

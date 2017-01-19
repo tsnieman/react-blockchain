@@ -18,6 +18,14 @@ const Header = () => (
         <li>
           <Link to="/hash">/hash</Link>
         </li>
+
+        <li>
+          <Link to="/block">/block</Link>
+        </li>
+
+        <li>
+          <Link to="/blockchain">/blockchain</Link>
+        </li>
       </ul>
     </nav>
   </header>
